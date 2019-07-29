@@ -1,0 +1,41 @@
+
+              ----------------------------------------
+              ----------------------------------------
+              # Flask Social Network By : Algorithm #
+              ----------------------------------------
+              ----------------------------------------
+
+1. Introduction [×]
+
+2. Structuring The Application Directory [×] :
+
+  1. Creating A Virtual Environment
+  2. Creating Application Folder
+  3. Creating Application Files
+  4. Installing Flask
+
+3. The Application [×] :
+
+  1. Edit config/settings.py
+  2. Edit .env file
+  3. Edit app/__init__.py
+  4. Edit run.py file
+  5. Run the server : python3 run.py
+
+4. Working with Blueprints [×] :
+
+  - Create module's template (templates/home/index.html)
+  - Create module's controller (views/home.py)
+  - Edit (app/__init__.py), add Blueprints & Register them
+  - Run the server : python3 run.py
+  - Create an Sample HTTP error handling (app/__init__.py)
+  - Create an HTTP 404 Error page (templates/errors/404.html)
+
+5. Adding bootstrap to our project [] :
+
+  - Create (css,js,images,fonts) folders in static folder.
+  - Add bootstrap files to the project.
+  - Add jQuery file.
+  - Add font-awesome library v4.
+  - Add custom css file (main.css).
+  - Add custom js file (main.js).
