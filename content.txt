@@ -31,7 +31,7 @@
   - Create an Sample HTTP error handling (app/__init__.py)
   - Create an HTTP 404 Error page (templates/errors/404.html)
 
-5. Adding bootstrap to our project [] :
+5. Adding bootstrap to our project [×] :
 
   - Create (css,js,images,fonts) folders in static folder.
   - Add bootstrap files to the project.
@@ -39,3 +39,41 @@
   - Add font-awesome library v4.
   - Add custom css file (main.css).
   - Add custom js file (main.js).
+
+7. Working with templates (Jinja2) [×] :
+
+  - Installing Jinja2
+
+    >> pip3 install Jinja2
+
+  - Create templates/layout.html file.
+  - Pass title to the template (modify home.py)
+  - Modify templates/home/index.html (extend from layout.html)
+  - Pass title to the template (404 page) (modify __init__.py)
+  - Modify templates/errors/404.html (extend from layout.html)
+
+8. Working with models [×] :
+
+  - install Flask-SQLAlchemy(pip3 install flask-sqlalchemy) + driver(pip3 install pymysql)
+  - Add SQLAlchemy connection URI to Configuration file (settings.py & .env)
+  - Create models/__init__.py file.
+  - Create models/users.py file (user's model)
+  - Edit models/__init__.py file.
+  - Edit models/users.py file.
+  - Add views/auth.py file.
+  - Edit app/__init__.py (Blueprints part & Database)
+  - Add templates/auth folder (template's auth)
+    - login page
+    - register page
+
+9. Working with templates (login page, register page, navigation, 404, etc.) [ ]
+
+  - Adding navigation to templates/layout.html
+  - Create forms/__init__.py file.
+  - Create forms/users.py file.
+  - Editing forms/users.py (coding register & login form's classes)
+  - Editing views/auth.py file (setup routes for login & register)
+  - Editing views/auth.py file (adding forms to templates)
+  - Coding register form (Design)
+  - Coding login form (Design)
+  - Coding 404 page (Desing)

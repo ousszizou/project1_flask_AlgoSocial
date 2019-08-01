@@ -1,0 +1,56 @@
+/* register form */
+
+.StyleForm .container {
+    width: 60%;
+    margin: 50px auto;
+    box-shadow: 1px 10px 20px #ececec;
+    border-radius: 5px;
+    background: white;
+    padding: 30px
+}
+
+.StyleForm .container .leftSide > img {
+    width: 100%;
+    position: relative;
+    top: 110px;
+}
+
+.StyleForm .container .rightSide > h1 {
+    margin-bottom: 20px;
+    color: #3f3d55;
+    font-weight: bold;
+    text-align: center;
+}
+
+.StyleForm .container .rightSide > form .form-group label {
+  margin-bottom: 0;
+}
+
+.StyleForm .container .rightSide > form input[type=submit] {
+    width: 100%;
+    margin: 25px 0;
+    background: #2f2e41;
+    border: none;
+}
+
+/* login form */
+.resetImg
+{
+  width: 100%;
+  position: relative;
+  top: 35px !important
+}
+
+/* 404 page not found */
+.notFound > div > h1 {
+    letter-spacing: 7px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #2f2e41;
+}
+
+.notFound > div > p {
+  color: #a2a2a2;
+  font-weight: 300;
+  letter-spacing: 4px;
+}

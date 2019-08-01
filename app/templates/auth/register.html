@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+  <div class="StyleForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 leftSide">
+          <img class="" src="{{ url_for('static', filename='images/register.svg') }}" alt="register photo">
+        </div>
+        <div class="col-xs-12 col-sm-6 rightSide">
+          <h1>Register</h1>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
