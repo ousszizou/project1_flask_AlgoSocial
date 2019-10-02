@@ -1,11 +1,18 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
+from app.forms.users import LoginForm , RegisterForm
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/login')
+@auth.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('auth/login.html')
+    title = 'login'
+    form = LoginForm()
+    if request.method == 'GET':
+        return render_template('auth/login.html', title=title, form=form)
 
-@auth.route('/register')
+@auth.route('/register', methods=['GET', 'POST'])
 def register():
-    return render_template('auth/register.html')
+    title = 'register'
+    form = RegisterForm()
+    if request.method == 'GET':
+        return render_template('auth/register.html', title=title, form=form)

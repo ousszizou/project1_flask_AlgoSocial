@@ -66,7 +66,7 @@
     - login page
     - register page
 
-9. Working with templates (login page, register page, navigation, 404, etc.) [ ]
+9. Working with templates (login page, register page, navigation, 404, etc.) [×]
 
   - Adding navigation to templates/layout.html
   - Create forms/__init__.py file.

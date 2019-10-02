@@ -13,6 +13,8 @@ dotenv_path = os.path.join(APP_ROOT, ".env")
 load_dotenv(dotenv_path)
 app.config.from_object('config.settings.' + os.environ.get('ENV'))
 
+
+
 # Database
 from app.models import db, users
 

@@ -1,2 +1,17 @@
 {% extends 'layout.html' %}
 {% block title %}{{ title }}{% endblock %}
+{% block body %}
+  <div class="container" style="margin-top: 100px">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 text-center notFound">
+        <div class="col-xs-12">
+            <h1>WHOOPS!</h1>
+            <p>We couldn't find the page you are looking for.</p>
+        </div>
+        <div class="col-xs-12">
+            <img class="resetImg" src="{{ url_for('static', filename='images/404.svg') }}" alt="404 page">
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

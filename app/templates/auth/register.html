@@ -11,8 +11,31 @@
         </div>
         <div class="col-xs-12 col-sm-6 rightSide">
           <h1>Register</h1>
+          <form action="{{ url_for('auth.register') }}" method="POST">
+            <div class="form-group">
+              {{ form.csrf_token }}
+              <div class="form-group">
+                {{ form.email.label }}
+                {{ form.email(class='form-control') }}
+              </div>
+              <div class="form-group">
+                {{ form.username.label }}
+                {{ form.username(class='form-control') }}
+              </div>
+              <div class="form-group">
+                {{ form.password.label }}
+                {{ form.password(class='form-control') }}
+              </div>
+              <div class="form-group">
+                {{ form.confirm.username }}
+                {{ form.confirm(class='form-control') }}
+              </div>
+              <div class="form-group">
+                {{ form.submit(class='btn btn-primary') }}
+              </div>
+            </div>
+          </form>
 
-          
         </div>
       </div>
     </div>

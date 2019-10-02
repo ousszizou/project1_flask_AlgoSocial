@@ -7,6 +7,7 @@ class Config:
     ENV = os.environ.get('ENV')
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SECRET_KEY = "algorithm@1234556789"
 
 class development(Config):
     """ development configurations """
