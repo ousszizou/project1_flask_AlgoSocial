@@ -31,6 +31,7 @@
     margin: 25px 0;
     background: #2f2e41;
     border: none;
+    color: white
 }
 
 /* login form */
@@ -53,4 +54,53 @@
   color: #a2a2a2;
   font-weight: 300;
   letter-spacing: 4px;
+}
+/* header */
+
+.header {
+    margin-bottom: 50px;
+    margin-top: 100px
+}
+
+.header .row .headingCode {
+    padding: 34px
+}
+
+.header .row .headingCode h1 {
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header .row .headingCode h1 > span {
+    color: #399dc4;
+}
+
+.header .row .imgHeader .thumbnail {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background: none
+}
+
+.header .row .imgHeader .thumbnail > img {
+    width: 100%
+}
+
+/* profile card */
+
+.showInfoCard .card .photo_profile_display {
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 163px;
+  left: 10px;
+}
+
+.showInfoCard .card h3 {
+  position: relative;
+  left: 120px;
+  top: 5px;
 }

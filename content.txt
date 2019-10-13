@@ -77,3 +77,20 @@
   - Coding register form (Design)
   - Coding login form (Design)
   - Coding 404 page (Desing)
+
+10. Working with routes (login & regsiter & logout) [×]
+
+  - Using macros to avoid repetetion code in forms:
+      Create/Editing templates/_renderForm.html file.
+  - Edit templates/auth/register.html (add macro)
+  - Editing views/auth.py file (coding process operation for register)
+  - Editing views/auth.py file (coding process operation for login)
+  - Editing models/users.py (inherite from UserMixin):
+      - Install Flask-Login plugin.
+      # The UserMixin will add Flask-Login attributes to our model so Flask-Login will be able to work with it.
+  - Editing app/__init__.py file (add flask-login configuration, user loader):
+      # A user loader tells Flask-Login how to find a specific user from the ID that is stored in their session cookie.
+  - Editing views/auth.py (working with process login)
+  - Editing views/auth.py file (coding process operation for logout)
+  - Editing templates/layout.html (add current_user.is_authenticated)
+  - Editing templates/home/index.html (show the right view for user/visitor) ======= DON'T FORGET CSS styles =======
