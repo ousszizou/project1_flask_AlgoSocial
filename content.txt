@@ -94,3 +94,17 @@
   - Editing views/auth.py file (coding process operation for logout)
   - Editing templates/layout.html (add current_user.is_authenticated)
   - Editing templates/home/index.html (show the right view for user/visitor) ======= DON'T FORGET CSS styles =======
+
+11. working with Post model include(migrations,relationships)
+
+  - install flask-migrate ext & flask-script:
+    - pip3 install Flask-Migrate
+    - pip3 install Flask-Script
+  - create \app\models\posts.py
+  - edit \app\__init__.py (add migrate & Post model)
+  - delete ENV from .env & add FLASK_ENV & FLASK_APP
+  - edit config/settings.py
+  - edit app/__init__.py (line 15)
+  - edit run.py (add if __name__ == ...)
+  - Test migrations
+  - Test relationships (User & Post)

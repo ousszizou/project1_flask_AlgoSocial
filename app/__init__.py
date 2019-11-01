@@ -1,4 +1,6 @@
 # import flask & important modules/extensions
+from flask_migrate import Migrate, MigrateCommand
+from flask_script import Manager
 from flask import Flask, render_template
 from dotenv import load_dotenv
 import config
@@ -12,16 +14,20 @@ app = Flask(__name__)
 APP_ROOT = os.path.join(os.path.dirname(__file__), "..")
 dotenv_path = os.path.join(APP_ROOT, ".env")
 load_dotenv(dotenv_path)
-app.config.from_object('config.settings.' + os.environ.get('ENV'))
-
-
+app.config.from_object('config.settings.' + os.environ.get('FLASK_ENV'))
 
 # Database
 from app.models import db, users
 from app.models.users import User
+from app.models.posts import Post
 
 db.create_all()
 db.session.commit()
+
+# migrations
+migrate = Migrate(app, db)
+manager = Manager(app)
+manager.add_command('db', MigrateCommand)
 
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'

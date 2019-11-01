@@ -5,3 +5,6 @@ __pycache__/
 # environment variables file
 .env
 env/
+
+# migrations
+migrations/

@@ -7,3 +7,4 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(255), unique=True)
     username = db.Column(db.String(255))
     password = db.Column(db.String(255))
+    posts = db.relationship('Post', backref='author', lazy=True)
