@@ -95,7 +95,7 @@
   - Editing templates/layout.html (add current_user.is_authenticated)
   - Editing templates/home/index.html (show the right view for user/visitor) ======= DON'T FORGET CSS styles =======
 
-11. working with Post model include(migrations,relationships)
+11. working with Post model include(migrations,relationships) [×]
 
   - install flask-migrate ext & flask-script:
     - pip3 install Flask-Migrate
@@ -108,3 +108,20 @@
   - edit run.py (add if __name__ == ...)
   - Test migrations
   - Test relationships (User & Post)
+
+12. working with APIs []
+
+  - install flask-restful ext:
+    - pip3 install flask-restful
+  - create app\API folder
+  - create app\API\__init__.py & resources.py files
+  - edit resources.py file
+  - add api to app\__init_.py file
+  - install marshmallow ext:
+    - pip3 install flask-marshmallow
+    - pip3 install marshmallow-sqlalchemy
+    - pip3 install marshmallow
+  - add marshmallow to app\__init__.py
+  - edit models\__init__.py (add ma)
+  - edit models\users.py (add schemas)
+  - Test API

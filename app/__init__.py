@@ -6,9 +6,19 @@ from dotenv import load_dotenv
 import config
 import os
 from flask_login import LoginManager
+from flask_restful import Api
+from flask_marshmallow import Marshmallow
 
 # create app object
 app = Flask(__name__)
+
+# define ma
+ma = Marshmallow(app)
+
+# create API
+api = Api(app)
+from app.API.resources import UserResource
+api.add_resource(UserResource, '/api/users')
 
 # Environment configurations
 APP_ROOT = os.path.join(os.path.dirname(__file__), "..")

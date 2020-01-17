@@ -1,4 +1,4 @@
-from . import db
+from . import db, ma
 from flask_login import UserMixin
 
 class User(db.Model, UserMixin):
@@ -8,3 +8,10 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(255))
     password = db.Column(db.String(255))
     posts = db.relationship('Post', backref='author', lazy=True)
+
+class UserSchema(ma.Schema):
+  class Meta:
+    fields = ['email','username']
+
+user_schema = UserSchema()
+users_schema = UserSchema(many=True)
