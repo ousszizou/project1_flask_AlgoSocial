@@ -1,3 +1,5 @@
-from app import app, ma
 from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy(app)
+from flask_marshmallow import Marshmallow
+
+db = SQLAlchemy()
+ma = Marshmallow()

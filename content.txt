@@ -40,7 +40,7 @@
   - Add custom css file (main.css).
   - Add custom js file (main.js).
 
-7. Working with templates (Jinja2) [×] :
+6. Working with templates (Jinja2) [×] :
 
   - Installing Jinja2
 
@@ -52,7 +52,7 @@
   - Pass title to the template (404 page) (modify __init__.py)
   - Modify templates/errors/404.html (extend from layout.html)
 
-8. Working with models [×] :
+7. Working with models [×] :
 
   - install Flask-SQLAlchemy(pip3 install flask-sqlalchemy) + driver(pip3 install pymysql)
   - Add SQLAlchemy connection URI to Configuration file (settings.py & .env)
@@ -66,7 +66,7 @@
     - login page
     - register page
 
-9. Working with templates (login page, register page, navigation, 404, etc.) [×]
+8. Working with templates (login page, register page, navigation, 404, etc.) [×]
 
   - Adding navigation to templates/layout.html
   - Create forms/__init__.py file.
@@ -78,7 +78,7 @@
   - Coding login form (Design)
   - Coding 404 page (Desing)
 
-10. Working with routes (login & regsiter & logout) [×]
+9. Working with routes (login & regsiter & logout) [×]
 
   - Using macros to avoid repetetion code in forms:
       Create/Editing templates/_renderForm.html file.
@@ -95,7 +95,7 @@
   - Editing templates/layout.html (add current_user.is_authenticated)
   - Editing templates/home/index.html (show the right view for user/visitor) ======= DON'T FORGET CSS styles =======
 
-11. working with Post model include(migrations,relationships) [×]
+10. working with Post model include(migrations,relationships) [×]
 
   - install flask-migrate ext & flask-script:
     - pip3 install Flask-Migrate
@@ -109,7 +109,7 @@
   - Test migrations
   - Test relationships (User & Post)
 
-12. working with APIs []
+11. working with APIs [×]
 
   - install flask-restful ext:
     - pip3 install flask-restful
@@ -125,3 +125,5 @@
   - edit models\__init__.py (add ma)
   - edit models\users.py (add schemas)
   - Test API
+
+12. Refactoring Code (Use Application Factory) [×]
