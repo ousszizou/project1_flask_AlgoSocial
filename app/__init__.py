@@ -1,6 +1,7 @@
 # import flask & important modules/extensions
 from flask import Flask, render_template
 from flask_login import LoginManager
+from flask_gravatar import Gravatar
 from flask_migrate import Migrate
 from dotenv import load_dotenv
 from app.models import db, ma
@@ -12,6 +13,13 @@ import os
 # migrations
 migrate = Migrate()
 login_manager = LoginManager()
+gravatar = Gravatar(size=100,
+                    rating='g',
+                    default='identicon',
+                    force_default=False,
+                    force_lower=False,
+                    use_ssl=False,
+                    base_url=None)
 
 def create_app():
   """ Initialize The Core Application """
@@ -32,6 +40,7 @@ def create_app():
   migrate.init_app(app,db)
   login_manager.login_view = 'auth.login'
   login_manager.init_app(app)
+  gravatar.init_app(app)
 
   # Database
   from app.models import users

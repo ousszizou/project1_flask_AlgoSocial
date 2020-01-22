@@ -89,10 +89,7 @@
 
 /* profile card */
 
-.showInfoCard .card .photo_profile_display {
-  background: red;
-  width: 100px;
-  height: 100px;
+.showInfoCard .card .photo_profile_display img {
   border-radius: 50%;
   position: absolute;
   top: 163px;

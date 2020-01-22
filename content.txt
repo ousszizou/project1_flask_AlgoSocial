@@ -127,3 +127,10 @@
   - Test API
 
 12. Refactoring Code (Use Application Factory) [×]
+
+13. Set Gravatar to users [×]
+  - install flask-gravatar ext:
+    - pip install flask-gravatar
+  - add gravatar ext to app\__init__.py
+  - use gravatar in app\templates\home\index.html file.
+  - modify stylesheets in app\static\css\main.css file.
