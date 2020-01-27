@@ -8,6 +8,8 @@ class Config:
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = "algorithm@1234556789"
+    JWT_SECRET_KEY = "321z2ezeasdsfdfsdfsdf@@//"
+    JWT_TOKEN_LOCATION = ['cookies']
 
 class development(Config):
     """ development configurations """

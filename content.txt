@@ -134,3 +134,16 @@
   - add gravatar ext to app\__init__.py
   - use gravatar in app\templates\home\index.html file.
   - modify stylesheets in app\static\css\main.css file.
+
+14. Secure REST API - JWT Authentication [×]
+
+  - install flask-jwt-extended:
+    - pip install flask-jwt-extended
+  - add flask-jwt-extended to app\__init__.py file.
+  - add JWT configuration to config/settings.py file.
+  - create TEST API endpoint in app\API\resources.py file.
+  - add Test API resource to app\API\__init__.py file.
+  - test the API endpoint.
+  - add jwt_required to TestResource & test the API again.
+  - create JWT access token in login proccess and logout proccess.
+  - test the API again.

@@ -8,6 +8,7 @@ from app.models import db, ma
 from app.API import api
 import config
 import os
+from flask_jwt_extended import JWTManager
 
 # Global extensions
 # migrations
@@ -20,6 +21,7 @@ gravatar = Gravatar(size=100,
                     force_lower=False,
                     use_ssl=False,
                     base_url=None)
+jwt = JWTManager()
 
 def create_app():
   """ Initialize The Core Application """
@@ -41,6 +43,7 @@ def create_app():
   login_manager.login_view = 'auth.login'
   login_manager.init_app(app)
   gravatar.init_app(app)
+  jwt.init_app(app)
 
   # Database
   from app.models import users
