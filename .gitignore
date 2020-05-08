@@ -6,5 +6,8 @@ __pycache__/
 .env
 env/
 
+# vscode editor settings
+.vscode/
+
 # migrations
 migrations/
