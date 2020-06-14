@@ -101,3 +101,57 @@
   left: 120px;
   top: 5px;
 }
+
+/* form-post styling */
+.main-content .main-content-form {
+  margin: 25px 0;
+}
+
+
+.main-content .main-content-form form textarea {
+  width: 100%;
+  border: 1px solid #17a2b8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-content .main-content-form form button {
+  float: right;
+  border: none;
+  background: #17a2b8;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.main-content-posts .post-component {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content-posts .post-component .post-component-author {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main-content-posts .post-component .post-component-author img {
+  border-radius: 50%;
+  width: 55px;
+}
+
+.main-content-posts .post-component .post-component-author h3 {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.main-content-posts .post-component .post-component-author span {
+  float: right;
+  margin-top: 8px;
+}
+
+.main-content-posts .post-component .post-component-posts {
+  background: #f7f7f7;
+  width: 100%;
+  padding: 10px 20px;
+}
